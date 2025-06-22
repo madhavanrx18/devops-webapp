@@ -1,21 +1,22 @@
 <settings>
 <servers>
   <server>
-    <id>devops-hm-nextwork-devops-cicd</id>
+    <id>devops-hm-devops-cicd-hm</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
 </servers>
+
 <profiles>
   <profile>
-    <id>devops-hm-nextwork-devops-cicd</id>
+    <id>devops-hm-devops-cicd-hm</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>devops-hm-nextwork-devops-cicd</id>
-        <url>https://devops-hm-467866448490.d.codeartifact.ap-south-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
+        <id>devops-hm-devops-cicd-hm</id>
+        <url>https://devops-hm-467866448490.d.codeartifact.ap-south-1.amazonaws.com/maven/devops-cicd-hm/</url>
       </repository>
     </repositories>
   </profile>
@@ -23,9 +24,9 @@
 
 <mirrors>
   <mirror>
-    <id>devops-hm-nextwork-devops-cicd</id>
-    <name>devops-hm-nextwork-devops-cicd</name>
-    <url>https://devops-hm-467866448490.d.codeartifact.ap-south-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
+    <id>devops-hm-devops-cicd-hm</id>
+    <name>devops-hm-devops-cicd-hm</name>
+    <url>https://devops-hm-467866448490.d.codeartifact.ap-south-1.amazonaws.com/maven/devops-cicd-hm/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
